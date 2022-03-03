@@ -1,0 +1,107 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 170%;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+footer, header, #section1, #section2, #section3, #section4 {
+    box-sizing: border-box;
+    padding: 10px 50px 10px 50px;
+}
+/* Blue Section */
+.blue {
+    background-color: #1f2937;
+    color: gray;
+}
+#top1, #intro h2 {
+    color: white;
+}
+/* Buttons */
+.sign-up {
+    background-color: #3882F6;
+    color: white;
+    height: 35px;
+    width: 95px;
+    border-radius: 5px;
+}
+#second-btn {
+    border: 1px solid white;
+}
+/* Header and its contents */
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr 600px;
+    grid-template-rows: 50px;
+    grid-template-areas: "top1 . top2";
+    background-color: #1F2937;
+}
+#top1 {
+    grid-area: top1;
+}
+#top2 {
+    grid-area: top2;
+}
+#top1, #top2 {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+}
+/* Section 1 and its content */
+#section1 {
+    display: grid;
+    grid-template-areas: "intro image-placeholder";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+#intro {
+    grid-area: intro;
+}
+#image-placeholder {
+    grid-area: image-placeholder;
+    background-color: darkgray;
+    height: 150px;
+    width: 350px;
+}
+/* Section 3 and its contents */
+#section3 {
+    padding-right: 80px;
+    background-color: #E5E7EB;
+    text-align: right;
+}
+#quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+/* Section 4 and its contents */
+#section4 {
+    
+}
+#fill-in {
+    display: flex;
+    background-color: #3882F6;
+    padding: 10px 20px 10px 20px;
+    margin: 35px 100px 35px 100px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 55%;
+}
+/* Bootom */
+footer {
+    background-color: #1F2937;
+    color: gray;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
